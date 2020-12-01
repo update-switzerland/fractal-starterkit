@@ -1,6 +1,12 @@
 {
-  "name": "Fractal Starter Kit",
+  "name": "fractal-starterkit",
   "version": "0.1.0",
+  "private": true,
+  "license": "GNU General Public License (GPL)",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/update-switzerland/fractal-starterkit"
+  },
   "dependencies": {
     "@frctl/fractal": "^1.5.1",
     "@frctl/mustache": "^1.0.0",

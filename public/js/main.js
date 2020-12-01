@@ -7,8 +7,8 @@ $( document ).ready(function() {
     });
 });
 $( document ).ready(function() {
-    console.log("Header was loaded");
+   console.log("Footer was loaded");
 });
 $( document ).ready(function() {
-   console.log("Footer was loaded");
+    console.log("Header was loaded");
 });
