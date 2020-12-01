@@ -1,0 +1,49 @@
+{
+    "title": "Basic Page",
+	"status": "prototype",
+    "notes": "Example Basic Page",
+    "context": {
+        "header": {
+            "navItems": [
+                {
+                    "title": "Header Test 1"
+                },
+                {
+                    "title": "Header Test 2"
+                },
+                {
+                    "title": "Header Test 3"
+                },
+                {
+                    "title": "Header Test 4"
+                }
+            ]
+        },
+        "contentItems": [
+            {
+                "hasButton": {
+                    "text": "Click me!",
+                    "content": "fenrokenrf",
+                    "is-sparkly": true
+                }
+            }
+        ],
+        "footer": {
+            "navItems": [
+                {
+                    "title": "Footer Test 1"
+                },
+                {
+                    "title": "Footer Test 2"
+                },
+                {
+                    "title": "Footer Test 3"
+                },
+                {
+                    "title": "Footer Test 4"
+                }
+            ]
+        }
+	}
+    
+}

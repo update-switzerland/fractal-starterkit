@@ -1,0 +1,10 @@
+{
+	"title": "Button",
+	"status": "prototype",
+	"notes": "The best button in the world",
+	"context": {
+        "text": "Click me!",
+        "content": "fenrokenrf",
+		"is-sparkly": true
+	}
+}

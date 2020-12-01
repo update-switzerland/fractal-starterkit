@@ -1,0 +1,24 @@
+{
+	"title": "Header",
+	"status": "prototype",
+	"notes": "Header for Website",
+	"context": {
+        "navItems": [
+			{
+				"title": "Header Titel 1"
+			},
+			{
+				"title": "Header Titel 2"
+			},
+			{
+				"title": "Header Titel 3"
+			},
+			{
+				"title": "Header Titel 4"
+			},
+			{
+				"title": "Header Titel 5"
+			}
+		]
+	}
+}

@@ -1,0 +1,24 @@
+{
+	"title": "Footer",
+	"status": "prototype",
+	"notes": "Footer for Website",
+	"context": {
+        "navItems": [
+			{
+				"title": "Footer Titel 1"
+			},
+			{
+				"title": "Footer Titel 2"
+			},
+			{
+				"title": "Footer Titel 3"
+			},
+			{
+				"title": "Footer Titel 4"
+			},
+			{
+				"title": "Footer Titel 5"
+			}
+		]
+	}
+}
