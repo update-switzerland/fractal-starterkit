@@ -39,4 +39,8 @@ fractal.web.set('static.path', path.join(__dirname, 'public'));
  */
 fractal.web.set('builder.dest', path.join(__dirname, 'build'));
 
+fractal.web.set('server.syncOptions', {
+    open: true
+});
+
 
