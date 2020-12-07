@@ -10,6 +10,10 @@ Get it from https://nodejs.org/en/
 ```
 npm i -g @frctl/fractal
 ```
+3. Install Gulp CLI
+```
+sudo npm install --global gulp-cli
+```
 
 ## How to use
 1. Clone the repo locally  
