@@ -21,7 +21,7 @@ fractal.components.set('ext', '.mustache'); // look for files with a .mustache f
 /*
  * Tell Fractal where to look for components.
  */
-fractal.components.set('path', path.join(__dirname, 'components'));
+fractal.components.set('path', path.join(__dirname, 'views'));
 
 /*
  * Tell Fractal where to look for documentation pages.

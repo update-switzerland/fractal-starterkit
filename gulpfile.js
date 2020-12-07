@@ -24,7 +24,7 @@ gulp.task('less',function() {
 gulp.task('scripts', function() {
     return gulp.src([
         'public/vendor/**/*.js',
-        'components/**/*.js',
+        'views/**/*.js',
     ])
     .pipe(concat('main.js'))
     .pipe(gulp.dest('public/js'));
@@ -33,12 +33,12 @@ gulp.task('scripts', function() {
 
 gulp.task('watch', function() {
     gulp.watch([
-        'components/**/*.less',
+        'views/**/*.less',
         'public/**/*.less'
         ], gulp.series('less'));
     gulp.watch([
-        'public/vendor/**/*.js',
-        'components/**/*.js',
+        'views/vendor/**/*.js',
+        'views/**/*.js',
          ], gulp.series('scripts'));
 });
 
