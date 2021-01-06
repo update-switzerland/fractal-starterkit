@@ -4,7 +4,39 @@
 	"notes": "The best button in the world",
 	"context": {
         "text": "Click me!",
-        "content": "fenrokenrf",
-		"is-sparkly": true
-	}
+		"content": "fenrokenrf",
+		"modifier": "error",
+		"is-sparkly": true,
+		"left-items": [
+			{
+				"title": "roefnwerpfnewrf",
+				"text": "foernfkpewnfekprwnfpkwenfkerfkwen rfpkwen rfpkwenrf "
+			},
+			{
+				"title": "roefnwerpfnewrf",
+				"text": "foernfkpewnfekprwnfpkwenfkerfkwen rfpkwen rfpkwenrf "
+			},
+			{
+				"title": "roefnwerpfnewrf",
+				"text": "foernfkpewnfekprwnfpkwenfkerfkwen rfpkwen rfpkwenrf "
+			}
+		]
+	},
+	"variants": [
+		{
+			"name": "warning",
+            "context": {
+        	    "modifier": "alert",
+                "message": "This is a warning banner"
+        	}
+		},
+		{
+			"name": "success",
+            "status": "prototype",
+            "context": {
+        	    "modifier": "success",
+                "message": "This is a success banner"
+        	}
+		}
+	]
 }

@@ -1,0 +1,65 @@
+@import "generic/variables.less";
+@import "generic/fonts.less";
+@import "generic/global.less";
+
+button {
+  background-color: @green;
+  border: none;
+  color: @white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+  &.general-button--alert {
+    background-color: blue;
+  }
+}
+
+
+.cp-footer {
+  background-color: beige;
+  min-height: 200px;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+
+  .inner {
+    padding: 20px;
+    ul {
+      padding-left: 0px;
+      list-style: none;
+      li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+    }
+  }
+
+}
+
+
+.cp-header {
+  background-color: black;
+  color: white;
+  min-height: 200px;
+  width: 100%;
+
+  .inner {
+    padding: 20px;
+    ul {
+      padding-left: 0px;
+      list-style: none;
+      li {
+        display: inline-block;
+        margin-right: 20px;
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+}

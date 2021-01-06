@@ -12,9 +12,15 @@ const plumber      = require('gulp-plumber');
 const notify       = require('gulp-notify');
 const path         = require('path');
 
+
 gulp.task('less',function() {
-    return gulp.src('public/css/main.less')
+    return gulp.src([
+        'public/css/main.less',
+        'views/**/*.less'
+    ])
     .pipe(customPlumber('Error running Less'))
+    .pipe(concat('style_concat.less'))
+    .pipe(gulp.dest('public/css'))
     .pipe(lessGlob())
     .pipe(less())
     .pipe(gulp.dest('public/css'))
@@ -34,7 +40,8 @@ gulp.task('scripts', function() {
 gulp.task('watch', function() {
     gulp.watch([
         'views/**/*.less',
-        'public/**/*.less'
+        'public/**/*.less',
+        '!public/css/style_concat.less'
         ], gulp.series('less'));
     gulp.watch([
         'views/vendor/**/*.js',
