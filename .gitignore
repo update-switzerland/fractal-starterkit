@@ -244,8 +244,6 @@ themes/classic/views/
 #
 # Fractal
 #
-public/js/main.js
-public/css/main.css
 package-lock.json
 node_modules/
 .DS_Store
