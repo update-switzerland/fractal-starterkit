@@ -1,7 +1,7 @@
 {
 	"context": {
 		"cfg": {
-			"img_path": "/img/"
+			"img_path": "../../img/"
 		}
 	}
 }
