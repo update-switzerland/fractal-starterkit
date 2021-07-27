@@ -10,6 +10,7 @@ const rename       = require('gulp-rename');
 const uglify       = require('gulp-uglify');
 const plumber      = require('gulp-plumber');
 const notify       = require('gulp-notify');
+const sourcemaps   = require('gulp-sourcemaps');
 const path         = require('path');
 
 
@@ -18,11 +19,13 @@ gulp.task('less',function() {
         'public/css/main.less',
         'views/**/*.less'
     ])
+    .pipe(sourcemaps.init())
     .pipe(customPlumber('Error running Less'))
     .pipe(concat('style_concat.less'))
     .pipe(gulp.dest('public/css'))
     .pipe(lessGlob())
     .pipe(less())
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('public/css'))
 });
 
@@ -32,7 +35,9 @@ gulp.task('scripts', function() {
         'public/vendor/**/*.js',
         'views/**/*.js',
     ])
+    .pipe(sourcemaps.init())
     .pipe(concat('main.js'))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('public/js'));
 });
 
