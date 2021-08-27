@@ -1,0 +1,54 @@
+{
+  "title": "Image Gallery",
+  "status": "prototype",
+    "context": {
+      "galleryTitle" : "Titel der Bildergalerie (H2 | optional)",
+      "hasGalleryItems" : [
+        {
+          "urlImgBig": "../../img/content/dummy-img-1.jpg",
+          "urlImgThumb":"../../img/content/dummy-img-1.jpg",
+          "imgTitle": "1. Bild der Galerie"  
+        },
+        {
+          "urlImgBig": "../../img/content/dummy-img-2.jpg",
+          "urlImgThumb":"../../img/content/dummy-img-2.jpg",
+          "imgTitle": "2. Bild der Galerie"  
+        },
+        {
+          "urlImgBig": "../../img/content/dummy-img-3.jpg",
+          "urlImgThumb":"../../img/content/dummy-img-3.jpg",
+          "imgTitle": "3. Bild der Galerie"  
+        },
+        {
+          "urlImgBig": "../../img/content/dummy-img-4.jpg",
+          "urlImgThumb":"../../img/content/dummy-img-4.jpg",
+          "imgTitle": "4. Bild der Galerie"  
+        },
+        {
+          "urlImgBig": "../../img/content/dummy-img-5.jpg",
+          "urlImgThumb":"../../img/content/dummy-img-5.jpg",
+          "imgTitle": "5. Bild der Galerie"  
+        },
+        {
+          "urlImgBig": "../../img/content/dummy-img-6.jpg",
+          "urlImgThumb":"../../img/content/dummy-img-6.jpg",
+          "imgTitle": "6. Bild der Galerie"  
+        },
+        {
+          "urlImgBig": "../../img/content/dummy-img-7.jpg",
+          "urlImgThumb":"../../img/content/dummy-img-7.jpg",
+          "imgTitle": "7. Bild der Galerie"  
+        },
+        {
+          "urlImgBig": "../../img/content/dummy-img-8.jpg",
+          "urlImgThumb":"../../img/content/dummy-img-8.jpg",
+          "imgTitle": "8. Bild der Galerie"  
+        },
+        {
+          "urlImgBig": "../../img/content/dummy-img-9.jpg",
+          "urlImgThumb":"../../img/content/dummy-img-9.jpg",
+          "imgTitle": "9. Bild der Galerie"  
+        }
+      ]
+    }
+  }

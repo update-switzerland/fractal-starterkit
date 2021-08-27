@@ -1,0 +1,19 @@
+{
+  "title": "Breadcrumb",
+  "status": "prototype",
+  "context": {
+    "hasBreadcrumbs": [
+      {
+        "url": "./",
+        "name": "Home"
+      },
+      {
+        "url": "./",
+        "name": "Level 1"
+      },
+      {
+        "name": "Level 2"
+      }
+    ]
+  }
+}

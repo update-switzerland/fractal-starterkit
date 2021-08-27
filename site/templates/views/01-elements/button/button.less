@@ -1,0 +1,31 @@
+button, 
+a.button {
+  background-color: @color-1;
+  border: 1px solid @color-1 ;
+  color: @white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: @font-family-alt;
+  font-weight: @font-weight-bold;
+  font-size: @font-size-base;
+  transition: @anim-duration;
+
+  &:hover {
+    background-color: @color-1-bg;
+    border: 1px solid @color-1;
+    color: @color-1;
+  }
+
+  &.no-hover {
+    &:hover {
+      background-color: @color-1;
+      border: 1px solid @color-1;
+      color: @white;
+    }
+  }
+  .icon {
+    font-weight: @font-weight-bold;
+  }
+}

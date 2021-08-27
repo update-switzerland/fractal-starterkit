@@ -1,0 +1,39 @@
+.el-txt-img-content {
+  p + h2,
+  p + h3,
+  p + h4,
+  ul + h2,
+  ul + h3,
+  ul + h4 {
+    padding-top: @space-small;
+  }
+
+
+
+  img {
+    width: 100%;
+    padding-bottom: @space-medium;
+  }
+
+  &.left {
+    img {
+      margin-top: @space-x-small;
+      @media @min-tablet-hoch {
+        max-width: 50%;
+        float: left;
+        padding-right: @space-large; 
+      }
+    }
+  }
+
+  &.right {
+    img {
+      margin-top: @space-x-small;
+      @media @min-tablet-hoch {
+        max-width: 50%;
+        float: right;
+        padding-left: @space-large;
+      }
+    }
+  }
+}

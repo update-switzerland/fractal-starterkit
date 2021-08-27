@@ -1,0 +1,27 @@
+{
+	"title": "Footer",
+	"status": "prototype",
+	"notes": "Footer for Website",
+	"context": {
+    "footerNavigation": "<nav data-module='NavigationHelper' class='footer-nav'><ul class='footer-nav-list'><li><a href='./' title='News'>News</a></li><li><a href='./' title='Produkte'>Produkte</a></li><li><a href='./' title='Werte'>Werte</a></li><li><a href='./' title='Referenzen'>Referenzen</a></li><li><a href='./' title='Unternehmen'>Unternehmen</a></li></ul></nav>",
+		"address" : "<p>Name Firma<br>Name der Strasse 11<br/>1111 Ortsname</p><p>+41 11 111 11 11<br /><a href='mailto:info@update.ch'>info@update.ch</a></p>",
+		"hasSoMeItems": [
+			{
+				"url": "#",
+				"name": "facebook"
+			},
+			{
+				"url": "#",
+				"name": "twitter"
+			},
+			{
+				"url": "#",
+				"name": "xing"
+			},
+			{
+				"url": "#",
+				"name": "vimeo"
+			}
+		]
+	}
+}

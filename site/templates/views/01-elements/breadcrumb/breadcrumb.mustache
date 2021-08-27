@@ -1,0 +1,15 @@
+<div class="el-breadcrumb">
+  <ul>
+    {{# hasBreadcrumbs }}
+      <li>
+        {{# url }}
+          <a href="{{ url }}">
+        {{/ url }}
+          {{ name }}
+        {{# url }}
+          </a>
+        {{/ url }}
+      </li>
+    {{/ hasBreadcrumbs }}
+  </ul>
+</div>

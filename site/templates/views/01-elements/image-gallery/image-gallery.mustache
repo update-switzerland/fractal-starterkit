@@ -1,0 +1,18 @@
+<div class="el-image-gallery">
+  {{# galleryTitle }}
+    <h2>
+        {{ galleryTitle }}
+    </h2>
+  {{/ galleryTitle }}
+
+  <div class="gallery-container grid">
+    {{# hasGalleryItems }}
+      <div class="gallery-item">
+        <a href="{{ urlImgBig }}" data-lightbox="click-light-box" data-title="{{ imgTitle }}">
+          <img src="{{ urlImgThumb }}">
+          <span class="icon-plus"></span>
+        </a>
+      </div>
+    {{/ hasGalleryItems }}
+  </div>
+</div>

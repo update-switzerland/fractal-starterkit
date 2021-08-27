@@ -1,0 +1,42 @@
+{
+  "title": "Teaser Bar",
+  "status": "prototype",
+  "context": {
+    "title": "Teaser Bar (H2)",
+    "hasTeaserItems": [
+      {
+        "modifier": "teaser",
+        "urlImage": "../../img/content/dummy-img-1.jpg",
+        "isEmbed": "true",
+        "title": "Titel der Teaser-Box 1 (H3)",
+        "text": "<p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.Das ist der Text der Media-Box.<br /> Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p>",
+        "linkText": "mehr",
+        "hasLink": {
+          "url": "./"
+        }
+      },
+      {
+        "modifier": "teaser",
+        "urlImage": "../../img/content/dummy-img-3.jpg",
+        "isEmbed": "true",
+        "title": "Titel der Teaser-Box 2 (H3)",
+        "text": "<p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.Das ist der Text der Media-Box.<br /> Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p>",
+        "linkText": "mehr",
+        "hasLink": {
+          "url": "./"
+        }
+      },
+      {
+        "modifier": "teaser",
+        "urlImage": "../../img/content/dummy-img-7.jpg",
+        "isEmbed": "true",
+        "title": "Titel der Teaser-Box 3 (H3)",
+        "text": "<p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.Das ist der Text der Media-Box.<br /> Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p>",
+        "linkText": "mehr",
+        "hasLink": {
+          "url": "./"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "title": "Basic Page",
+	"status": "prototype",
+  "context": {
+    "header": "@header",
+
+    "contentItems": [
+      {
+        "sectionName":"breadcrumb",
+        "hasBreadcrumb": "@breadcrumb"
+      },
+      {
+        "sectionName":"page-title",
+        "hasPageTitle": "@page-title"
+      },
+      {
+        "sectionName":"txt-img-content",
+        "hasTxtImgContent": "@txt-img-content"
+      },
+      {
+        "sectionName":"accordion",
+        "hasAccordion": "@accordion"
+      },
+      {
+        "sectionName":"media-box big",
+        "hasMediaBox": {
+          "modifier": "big",
+          "urlVideo": "https://player.vimeo.com/video/463144779",
+          "title": "Titel der Video-Media-Box Big (H2)",
+          "text": "<p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.Das ist der Text der Media-Box.<br /> Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p>"
+        }
+      },
+      {
+        "sectionName":"image-gallery",
+        "hasImageGallery": "@image-gallery"
+      },
+      {
+        "sectionName":"media-box medium",
+        "hasMediaBox": {
+          "modifier": "medium",
+          "urlImage": "../../img/content/dummy-img-1.jpg",
+          "title": "Titel der Image-Media-Box Medium (H2)",
+          "text": "<p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p><p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p>"
+        }
+      },
+      {
+        "sectionName":"teaser-bar",
+        "hasTeaserBar": "@teaser-bar"
+      },
+      {
+        "sectionName":"button-bar",
+        "hasButtonBar": "@button-bar"
+      },
+      {
+        "sectionName":"media-box small",
+        "hasMediaBox": [
+          {
+            "modifier": "small",
+            "urlImage": "../../img/content/dummy-img-9.jpg",
+            "title": "Erster Titel der Image-Media-Box Small (H2)",
+            "text": "<p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.Das ist der Text der Media-Box.<br /> Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p>",
+            "linkText": "mehr",
+            "hasLink": {
+              "url": "./"
+            }
+          },
+          {
+            "modifier": "small",
+            "urlImage": "../../img/content/dummy-img-4.jpg",
+            "title": "Zweiter Titel der Image-Media-Box Small (H2)",
+            "text": "<p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.Das ist der Text der Media-Box.<br /> Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p>",
+            "linkText": "mehr",
+            "hasLink": {
+              "url": "./"
+            }
+          },
+          {
+            "modifier": "small",
+            "urlImage": "../../img/content/dummy-img-6.jpg",
+            "title": "Dritter Titel der Image-Media-Box Small (H2)",
+            "text": "<p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.Das ist der Text der Media-Box.<br /> Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p>",
+            "linkText": "mehr",
+            "hasLink": {
+              "url": "./"
+            }
+          }
+        ]
+      }    
+    ],
+    
+    "footer": "@footer"
+	}  
+}

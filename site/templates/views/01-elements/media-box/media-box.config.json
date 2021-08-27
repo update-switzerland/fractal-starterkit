@@ -1,0 +1,30 @@
+{
+  "title": "Media Box",
+  "status": "prototype",
+  "context": {
+  },
+  "variants": [
+    {
+      "name": "Image",
+      "context": {
+        "modifier": "small",
+        "urlImage": "../../img/content/dummy-img-3.jpg",
+        "title": "Titel der Image-Media-Box (H2)",
+        "text": "<p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.Das ist der Text der Media-Box.<br /> Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p>",
+        "linkText": "mehr",
+        "hasLink": {
+          "url": "./"
+        }
+      }
+    },
+    {
+      "name": "Video",
+      "context" : {
+        "modifier": "small",
+        "urlVideo": "https://player.vimeo.com/video/463144779",
+        "title": "Titel der Video-Media-Box (H2)",
+        "text": "<p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.Das ist der Text der Media-Box.<br /> Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p>"
+      }
+    }
+  ]
+}

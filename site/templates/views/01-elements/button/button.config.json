@@ -1,0 +1,29 @@
+{
+	"title": "Button",
+	"status": "prototype",
+	"context": {
+		"text": "Click me!",
+		"url": "#",
+		"openInNewTab": false
+	},
+	"variants": [
+		{
+			"name": "no-hover",
+			"context": {
+				"modifier": "no-hover",
+				"text": "No Hover Button",
+				"url": "#",
+				"openInNewTab": true
+			}
+		},
+		{
+			"name": "with-icon",
+			"context": {
+				"text": "Button with Icon",
+				"url": "#",
+				"openInNewTab": true,
+				"icon": "next"
+			}
+		}
+	]
+}

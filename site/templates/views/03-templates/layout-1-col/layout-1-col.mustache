@@ -1,0 +1,17 @@
+{{# header }}
+  {{> @header }}
+{{/ header }}
+
+<div class="main basic-page" role="main"> 
+    {{# contentItems }}
+        <section class="content-section {{ sectionName }}">
+            <div class="page-wrapper">
+                {{> @parsys }}
+            </div>
+        </section>
+    {{/ contentItems }}
+</div>
+
+{{# footer }}
+  {{> @footer }}
+{{/ footer }}

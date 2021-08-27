@@ -1,0 +1,26 @@
+<div class="el-accordion-item{{# isOpen }} already-open{{/ isOpen }}">
+	<div class="accordion-title">
+		<div class="accordion-title-inner">
+			 <h3>{{ accordionTitle }}</h3>
+			 <span class="toggle">
+				 <i class=""></i>
+			 </span>
+		 </div>
+	</div>
+
+	<div class="accordion-container">
+	  {{# hasContentText }}
+      <div class="text-container">
+        {{# title }}
+          <h3>
+            {{ title }}
+          </h3>
+        {{/ title }}
+
+        <div class="text">
+            {{{ contentText }}}
+        </div>
+      </div>
+    {{/ hasContentText }}
+	</div>
+</div>

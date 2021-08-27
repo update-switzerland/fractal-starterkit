@@ -1,0 +1,11 @@
+{
+  "title": "Accordion Item",
+  "status": "prototype",
+  "context": {
+		"accordionTitle": "Accordion 1",
+		"hasTextContent": {
+      "title": "maskenpflicht",
+      "content": "<p>vor, während und nach der vorstellung gilt maskenpflicht. vom betreten bis zum verlassen des gebäudes sind besucher*innen angehalten, schutzmasken zu tragen. das theater stellt bei bedarf masken zur verfügung.</p>"
+    }
+	}
+}

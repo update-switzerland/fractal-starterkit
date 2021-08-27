@@ -1,0 +1,49 @@
+<div class="el-media-box {{ modifier }}">
+  <div class="inner">
+
+    <div class="media-container">
+        {{# urlImage }}
+          <figure>
+            <img src="{{ urlImage }}">
+          </figure>
+        {{/ urlImage }}
+
+        {{# urlVideo }}
+          <div class="video">
+            <iframe src="{{ urlVideo }}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe>
+          </div>
+        {{/ urlVideo }}
+    </div>
+
+    <div class="text-container">
+      {{# title }}
+        {{# isEmbed }}
+        <h3>
+          {{ title }}
+        </h3>
+        {{/ isEmbed }}
+        {{^ isEmbed }}
+        <h2>
+          {{ title }}
+        </h2>
+        {{/ isEmbed }}
+      {{/ title }}
+
+      {{# text }}
+        <div class="content">
+            {{{ text }}}
+        </div>
+      {{/ text }}
+
+      {{# linkText }}
+        <div class="link-text">
+            <p>{{ linkText }}</p>
+        </div>
+      {{/ linkText }}
+    </div>
+
+    {{# hasLink }}
+      <a href="{{ url }}" class="link-box"></a> 
+    {{/ hasLink }}
+  </div>
+</div>

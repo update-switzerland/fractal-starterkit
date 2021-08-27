@@ -1,0 +1,9 @@
+{
+  "title": "Page Title",
+  "status": "prototype",
+  "context": {
+    "pageTitle": "Das ist der Seiten-Titel (H1)",
+    "lead": "Das ist der Lead. Der kann stehen, muss aber nicht. Blindtext. Ich bin Blindtext. Das ist der Lead. Der kann stehen, muss aber nicht. Blindtext. Ich bin Blindtext. Das ist der Lead. Der kann stehen, muss aber nicht. "
+
+  }
+}

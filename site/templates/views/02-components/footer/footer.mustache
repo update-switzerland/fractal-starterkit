@@ -1,0 +1,40 @@
+<footer class="cp-footer">
+  <div class="footer-area">
+    <div class="page-wrapper">
+      <div class="inner">
+        <div class="footer-container">
+          <div class="footer-nav">
+            {{{ footerNavigation }}}
+          </div>
+
+          <div class="footer-address">
+            <div class="adress">
+            {{{ address }}}
+            </div>
+          </div>      
+        </div>
+
+          <div class="social-media">
+            <ul>
+              {{# hasSoMeItems }}
+                <li>
+                  <a href="{{ url }}" class="icon icon-{{ name }}" target="_blank"></a>
+                </li>
+              {{/ hasSoMeItems }}
+            </ul>
+          </div>
+      </div> 
+    </div>
+  </div>
+
+
+  <div class="footer-bar">
+    <p class="copyright">
+      © Copyright 2021 by Holder | Impressum | AGB | Disclaimer
+    </p>
+    <p class="website">
+      Website by update AG, Zurich
+    </p>
+  </div>
+
+</footer>

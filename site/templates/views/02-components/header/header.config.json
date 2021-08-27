@@ -1,0 +1,8 @@
+{
+	"title": "Header",
+	"status": "prototype",
+	"notes": "Header for Website",
+	"context": {
+	"mainNavigation": "<nav data-module='NavigationHelper' class='main-nav'><ul class='level-1'><li><a href='./' title='News'>News</a></li><li><a href='./' title='Produkte'>Produkte</a></li><li><a href='./' title='Werte'>Werte</a></li><li><a href='./' title='Referenzen'>Referenzen</a><ul class='level-2'><li><a href='./' title='Referenz 1'>Referenz eins</a></li><li><a href='./' title='Referenz 2'>Zweite Referenz</a></li><li><a href='./' title='Referenz 3'>Die dritte Referenz</a></li><li><a href='./' title='Referenz 4'>Vierte Referenz</a></li><li><a href='./' title='weitere...'>weitere ...</a></li></ul></li><li><a href='./' title='Unternehmen'>Unternehmen</a></li></ul></nav>"
+	}
+}

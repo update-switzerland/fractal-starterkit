@@ -1,0 +1,13 @@
+<div class="cp-teaser-bar">
+  {{# title }}
+    <h2>
+      {{ title }}
+    </h2>
+  {{/ title }}
+
+  <div class="teaser-bar grid col-3">
+    {{# hasTeaserItems }}
+      {{> @media-box }}
+    {{/ hasTeaserItems }}
+  </div>
+</div>

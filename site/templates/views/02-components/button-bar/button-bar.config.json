@@ -1,0 +1,24 @@
+{
+  "title": "Button Bar",
+  "status": "prototype",
+  "context": {
+    "modifier": "centered",
+    "hasButton": [
+      {
+				"text": "Button eins",
+				"url": "#",
+				"openInNewTab": true
+      },
+      {
+				"text": "Zweiter Button",
+				"url": "#",
+				"openInNewTab": true
+      },
+      {
+				"text": "Button drei",
+				"url": "#",
+				"openInNewTab": true
+      }
+    ]
+  }
+}
