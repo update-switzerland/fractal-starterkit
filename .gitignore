@@ -16,14 +16,14 @@
 *.sqlite
 
 # DOCUMENTS: PICTURES
-*.jpg
+#*.jpg
 *.jpeg
 *.gif
-*.png
+#*.png
 *.tiff
 *.psd
 *.ico
-*.svg
+#*.svg
 
 # DOCUMENTS: PDFs
 *.pdf
@@ -55,9 +55,9 @@
 #
 # FONTS
 #
-*.eot
-*.ttf
-*.woff
+#*.eot
+#*.ttf
+#*.woff
 
 
 #
@@ -245,7 +245,7 @@ themes/classic/views/
 # Fractal
 #
 package-lock.json
-node_modules/
+Prototype/node_modules/
 .DS_Store
 Thumbs.db
 .idea/
