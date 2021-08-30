@@ -33,12 +33,12 @@ fractal.components.set('ext', '.mustache'); // look for files with a .mustache f
 /*
  * Tell Fractal where to look for components.
  */
-fractal.components.set('path', '../site/templates/views');
+fractal.components.set('path', './views');
 
 /*
  * Tell the Fractal web preview plugin where to look for static assets.
  */
-fractal.web.set('static.path', '../site/templates/public');
+fractal.web.set('static.path', './public');
 
 /*
  * Tell Fractal where to look for documentation pages.
