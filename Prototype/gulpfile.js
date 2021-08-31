@@ -16,47 +16,47 @@ const path         = require('path');
 
 gulp.task('less',function() {
     return gulp.src([
-        './public/css/main.less',
-        './views/**/*.less',
-        './public/vendor/lightbox/css/lightbox.less',
-        './public/vendor/slick/slick.less',
+        '../site/templates/public/css/main.less',
+        '../site/templates/views/**/*.less',
+        '../site/templates/public/vendor/lightbox/css/lightbox.less',
+        '../site/templates/public/vendor/slick/slick.less',
     ])
     .pipe(sourcemaps.init())
     .pipe(customPlumber('Error running Less'))
     .pipe(concat('style_concat.less'))
-    .pipe(gulp.dest('./public/css'))
+    .pipe(gulp.dest('../site/templates/public/css'))
     .pipe(lessGlob())
     .pipe(less())
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./public/css'))
+    .pipe(gulp.dest('../site/templates/public/css'))
 });
 
 
 gulp.task('scripts', function() {
     return gulp.src([
-        './public/vendor/**/*.js',
-        './public/js/global.js',
-        './views/**/*.js',
-        './public/js/end.js',
+        '../site/templates/public/vendor/**/*.js',
+        '../site/templates/public/js/global.js',
+        '../site/templates/views/**/*.js',
+        '../site/templates/public/js/end.js',
     ])
     .pipe(sourcemaps.init())
     .pipe(concat('main.js'))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./public/js'));
+    .pipe(gulp.dest('../site/templates/public/js'));
 });
 
 
 gulp.task('watch', function() {
     gulp.watch([
-        './views/**/*.less',
-        './public/**/*.less',
-        '!./public/css/style_concat.less'
+        '../site/templates/views/**/*.less',
+        '../site/templates/public/**/*.less',
+        '!../site/templates/public/css/style_concat.less'
         ], gulp.series('less'));
     gulp.watch([
-        './views/vendor/**/*.js',
-        './public/js/global.js',
-        './views/**/*.js',
-        './public/js/end.js',
+        '../site/templates/views/vendor/**/*.js',
+        '../site/templates/public/js/global.js',
+        '../site/templates/views/**/*.js',
+        '../site/templates/public/js/end.js',
          ], gulp.series('scripts'));
 });
 
