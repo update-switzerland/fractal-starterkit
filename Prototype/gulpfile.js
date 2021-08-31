@@ -10,6 +10,7 @@ const rename       = require('gulp-rename');
 const uglify       = require('gulp-uglify');
 const plumber      = require('gulp-plumber');
 const notify       = require('gulp-notify');
+const inject       = require('gulp-inject-string');
 const sourcemaps   = require('gulp-sourcemaps');
 const path         = require('path');
 
@@ -31,20 +32,26 @@ gulp.task('less',function() {
     .pipe(gulp.dest('../site/templates/public/css'))
 });
 
-
 gulp.task('scripts', function() {
     return gulp.src([
-        '../site/templates/public/vendor/**/*.js',
         '../site/templates/public/js/global.js',
-        '../site/templates/views/**/*.js',
-        '../site/templates/public/js/end.js',
+        '../site/templates/views/**/*.js'
     ])
     .pipe(sourcemaps.init())
-    .pipe(concat('main.js'))
+    .pipe(concat('temp.js'))
+    .pipe(inject.wrap('$(document).ready(function(){', '});'))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('../site/templates/public/js'));
 });
 
+gulp.task('final-scripts', function(){
+    return gulp.src([
+        '../site/templates/public/vendor/**/*.js',
+        '../site/templates/public/js/temp.js'
+    ])
+    .pipe(concat('main.js'))
+    .pipe(gulp.dest('../site/templates/public/js'));
+});
 
 gulp.task('watch', function() {
     gulp.watch([
@@ -55,9 +62,8 @@ gulp.task('watch', function() {
     gulp.watch([
         '../site/templates/views/vendor/**/*.js',
         '../site/templates/public/js/global.js',
-        '../site/templates/views/**/*.js',
-        '../site/templates/public/js/end.js',
-         ], gulp.series('scripts'));
+        '../site/templates/views/**/*.js'
+         ], gulp.series('scripts', 'final-scripts'));
 });
 
 
@@ -69,7 +75,6 @@ function customPlumber(errTitle) {
         })
     });
 }
-
 
 gulp.task('fractal:start', function(){
     const server = fractal.web.server({
@@ -92,4 +97,4 @@ gulp.task('fractal:build', function(){
 });
 
 
-gulp.task('default', gulp.series('fractal:start', 'less', 'scripts', 'watch'));
+gulp.task('default', gulp.series('fractal:start', 'less', 'scripts', 'final-scripts', 'watch'));

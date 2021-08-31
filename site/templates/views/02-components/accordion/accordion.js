@@ -12,6 +12,6 @@ $($accordionTitle).click(function (e) {
 
   if ($openItem) {
     $(this).siblings('.accordion-container').slideDown($toggleSpeed);
-    $(this).parent().addClass('open')
+    $(this).parent().addClass('open');
   }
 });

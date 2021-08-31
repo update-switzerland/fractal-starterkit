@@ -1,6 +1,3 @@
-// Opening Tag document.ready(), ended in public/js/end.js
-$('document').ready(function () {
-
 const $toggleSpeed = 200;
 
 const $mainNav = $('header .nav-container nav.main-nav');
