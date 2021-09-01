@@ -3,6 +3,7 @@
   "status": "prototype",
   "context": {
     "title": "Teaser Bar (H2)",
+    "column": 3,
     "hasTeaserItems": [
       {
         "modifier": "teaser",

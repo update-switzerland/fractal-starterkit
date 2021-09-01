@@ -51,13 +51,27 @@
     padding: 0 @margin-grid;
   }
 
+  &.col-2 {
+    > div {
+      width: 100%;
+      @media @min-tablet-quer{
+        width: 50%;
+      }
+    }
+  }
   &.col-3 {
     > div {
       width: 100%;
-
       @media @min-tablet-quer{
         width: 33.33%;
-    
+      }
+    }
+  }
+  &.col-4 {
+    > div {
+      width: 100%;
+      @media @min-tablet-quer{
+        width: 25%;
       }
     }
   }

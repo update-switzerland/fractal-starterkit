@@ -18,7 +18,7 @@
 # DOCUMENTS: PICTURES
 #*.jpg
 *.jpeg
-*.gif
+#*.gif
 #*.png
 *.tiff
 *.psd
