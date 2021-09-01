@@ -1,6 +1,7 @@
 'use strict';
 
 const gulp         = require('gulp');
+const fs           = require('fs');
 const fractal      = require('./fractal.config.js');
 const logger       = fractal.cli.console;
 const less         = require('gulp-less');
@@ -98,3 +99,53 @@ gulp.task('fractal:build', function(){
 
 
 gulp.task('default', gulp.series('fractal:start', 'less', 'scripts', 'final-scripts', 'watch'));
+
+
+/**
+ * Task to automatically build the parsys-file
+ */
+
+gulp.task('build-parsys', done => {
+
+    const viewsDir = '../site/templates/views/';
+    const scanDirs = ['01-elements', '02-components'];
+
+    var parsysContent = '';
+
+    scanDirs.forEach(function(sd){
+
+        const subDirs = fs.readdirSync(viewsDir + sd);
+
+        subDirs.forEach(function(subDir){
+
+            // ignore directories that start with an underscore (i.e. _parsys)
+
+            if (subDir.substr(0, 1) !== '_') {
+                parsysContent += "{{# has" + camelCaseify(subDir) + "}}\n\t{{> @" + subDir + "}}\n{{/ has" + camelCaseify(subDir) + "}}\n\n";
+            }
+
+            fs.writeFileSync(viewsDir + '01-elements/_parsys/parsys.mustache', parsysContent);
+        });
+
+    });
+
+    done();
+});
+
+function camelCaseify (string) {
+
+    const parts = string.split('-');
+    var retVal = '';
+
+    if (parts.length > 1) {
+        parts.forEach(function(str){
+            retVal += str.charAt(0).toUpperCase() + str.slice(1);
+        });
+
+        return retVal;
+
+    } else {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+
+}
