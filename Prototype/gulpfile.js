@@ -1,18 +1,16 @@
 'use strict';
 
 const gulp         = require('gulp');
+const fs           = require('fs');
 const fractal      = require('./fractal.config.js');
 const logger       = fractal.cli.console;
 const less         = require('gulp-less');
 const lessGlob     = require('gulp-less-glob');
 const concat       = require('gulp-concat');
-const rename       = require('gulp-rename');
-const uglify       = require('gulp-uglify');
 const plumber      = require('gulp-plumber');
 const notify       = require('gulp-notify');
 const inject       = require('gulp-inject-string');
 const sourcemaps   = require('gulp-sourcemaps');
-const path         = require('path');
 
 
 gulp.task('less',function() {
@@ -98,3 +96,44 @@ gulp.task('fractal:build', function(){
 
 
 gulp.task('default', gulp.series('fractal:start', 'less', 'scripts', 'final-scripts', 'watch'));
+
+
+gulp.task('build-parsys', done => {
+    const viewsDir = '../site/templates/views/';
+    const scanDirs = ['01-elements', '02-components'];
+    const ignoreDirs = [
+        'footer',
+        'header'
+    ];
+
+    let parsysContent = '';
+
+    scanDirs.forEach(function(sd){
+        const subDirs = fs.readdirSync(viewsDir + sd);
+
+        subDirs.forEach(function(subDir){
+            if (ignoreDirs.includes(subDir) || subDir.startsWith('_') || subDir.startsWith('.')) return;
+
+            let camelCaseified = camelCaseify(subDir);
+
+            parsysContent += `{{# ${camelCaseified} }}\n`;
+            parsysContent += `\t{{> @${subDir} }}\n`;
+            parsysContent += `{{/ ${camelCaseified} }}\n\n`;
+
+            fs.writeFileSync(viewsDir + '01-elements/_parsys/parsys.mustache', parsysContent);
+        });
+    });
+
+    done();
+});
+
+const camelCaseify = string => {
+    const parts = string.split('-');
+    let retVal = '';
+
+    if (!parts.length > 1) return string;
+
+    parts.forEach((str, index) => retVal += (index !== 0) ? str.charAt(0).toUpperCase()+str.slice(1) : str);
+
+    return retVal;
+}
