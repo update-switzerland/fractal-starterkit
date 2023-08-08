@@ -17,12 +17,12 @@
 
 # DOCUMENTS: PICTURES
 #*.jpg
-*.jpeg
-*.gif
+#*.jpeg
+#*.gif
 #*.png
 *.tiff
 *.psd
-*.ico
+#*.ico
 #*.svg
 
 # DOCUMENTS: PDFs

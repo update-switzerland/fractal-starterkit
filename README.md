@@ -22,7 +22,19 @@ sudo npm install --global gulp-cli
 ```
 npm install
 ```
-4. After the Dependencies has been installed, start fractal by typing the following command in terminal
+4. After the Dependencies have been installed, start fractal by typing the following command in terminal
 ```
 gulp
 ```
+
+## Re-create parsys-file when a new element/component was added
+
+enter the following in the terminal
+
+```
+gulp build-parsys
+```
+
+## Javascript-files in elements/components/…
+
+You don't need to add `$(document).ready(function(){…});` to the javascript files. They will be wrapped into this when the js-files are concatenated.
