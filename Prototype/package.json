@@ -11,15 +11,17 @@
     "@frctl/fractal": "^1.5.1",
     "@frctl/mustache": "^1.0.0",
     "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
+    "gulp-ignore": "^3.0.0",
+    "gulp-inject-string": "^1.1.2",
     "gulp-less": "^4.0.1",
     "gulp-less-glob": "^1.0.0",
     "gulp-notify": "^3.2.0",
     "gulp-plumber": "^1.2.1",
-    "gulp-inject-string": "^1.1.2",
     "gulp-rename": "^2.0.0",
-    "gulp-uglify": "^3.0.2",
-    "gulp-sourcemaps": "^3.0.0"
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2"
   },
   "scripts": {
     "fractal:start": "fractal start --sync",

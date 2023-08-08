@@ -1,83 +1,84 @@
 .el-accordion-item {
-  background-color: @white;
+    background-color: @white;
 
-	.accordion-title {
-		position: relative;
-		display: block;
-		background-color: @color-brand;
-		border: 1px solid @color-brand;
-		padding: @space-small @space-medium @space-small;
-    cursor: pointer;
+    .accordion-title {
+        position: relative;
+        display: block;
+        background-color: @color-brand;
+        border: 1px solid @color-brand;
+        padding: @space-small @space-medium @space-small;
+        cursor: pointer;
 
-		.accordion-title-inner {
-			h3 {
-				font-family: @font-family-alt;
-				font-weight: @font-weight-bold;
-				font-size: @font-size-h3;
-				margin-bottom: 0;
-				color: @white;
-			}
-			span.toggle {
-				&::before {
-					position: absolute;
-					right: @space-medium;
-					top: 1.7rem;
-					font-family: "icomoon";
-					content: @icon-plus;
-					color: @white;
-					font-size: 1.8rem;
-					pointer-events: none;
-					transition-duration: 0.3s;
-				}
-			}
-		}
-	}
+        .accordion-title-inner {
+            h3 {
+                font-family: @font-family-alt;
+                font-weight: @font-weight-bold;
+                font-size: @font-size-h3;
+                margin-bottom: 0;
+                color: @white;
+            }
 
-	.accordion-container {
-		display: none;
-		padding: 0;
-		background-color: @white;
-		border-right: 1px solid @color-brand;
-		border-bottom: 1px solid @color-brand;
-		border-left: 1px solid @color-brand;
-		border-top-left-radius: 0;
-		border-top-right-radius: 0;
-		border-bottom-right-radius: 5px;
-		border-bottom-left-radius: 5px;
+            span.toggle {
+                &::before {
+                    position: absolute;
+                    right: @space-medium;
+                    top: 1.7rem;
+                    font-family: "icomoon";
+                    content: @icon-plus;
+                    color: @white;
+                    font-size: 1.8rem;
+                    pointer-events: none;
+                    transition-duration: 0.3s;
+                }
+            }
+        }
+    }
 
-		.text-container {
-			padding: @space-medium @space-medium;
-			h3 {
-				font-size: @font-size-h4;
-				font-weight: @font-weight-bold;
-			}
-			.text {
-				p {
-					&:last-child {
-						margin: 0;
-					}
-				}
-			}
-		}
-	}
+    .accordion-container {
+        height: 0;
+        overflow: hidden;
+        padding: 0;
+        background-color: @white;
+        border-right: 1px solid @color-brand;
+        border-bottom: 1px solid @color-brand;
+        border-left: 1px solid @color-brand;
+        border-radius: 0 0 5px 5px;
+        transition: height @anim-duration ease-in-out;
 
-	&.open,
-	&.already-open {
-		> .accordion-title {
-			border-bottom: 1px solid @white;
-			.accordion-title-inner {
-				span.toggle {
-					&::before {
-						content: @icon-minus;
-						// transform: rotate(45deg);
-					}
-				}
-			}
-		}
-	}
-	&.already-open {
-		> .accordion-container {
-			display: block;
-		}
-	}
+        .text-container {
+            padding: @space-medium @space-medium;
+
+            h3 {
+                font-size: @font-size-h4;
+                font-weight: @font-weight-bold;
+            }
+
+            .text {
+                p {
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &.open,
+    &.already-open {
+        > .accordion-title {
+            .accordion-title-inner {
+                span.toggle {
+                    &::before {
+                        content: @icon-minus;
+                    }
+                }
+            }
+        }
+    }
+
+    &.already-open {
+        > .accordion-container {
+            height: auto;
+        }
+    }
 }

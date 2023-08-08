@@ -32,12 +32,13 @@ gulp.task('less',function() {
 
 gulp.task('scripts', function() {
     return gulp.src([
-        '../site/templates/public/js/global.js',
+        '../site/templates/public/js/ElementHelper.js',
+        '../site/templates/public/js/Globals.js',
         '../site/templates/views/**/*.js'
     ])
     .pipe(sourcemaps.init())
     .pipe(concat('temp.js'))
-    .pipe(inject.wrap('$(document).ready(function(){', '});'))
+    .pipe(inject.wrap('document.addEventListener("DOMContentLoaded",function(){', '});'))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('../site/templates/public/js'));
 });

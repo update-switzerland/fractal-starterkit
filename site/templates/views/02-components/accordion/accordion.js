@@ -1,17 +1,17 @@
-const $accordionItem = $('.cp-accordion .el-accordion-item');
-const $accordionContainer = $('.accordion-items .accordion-container');
-const $accordionTitle = $('.cp-accordion .accordion-title');
+const accordionItems = document.querySelectorAll('.cp-accordion .el-accordion-item');
+const accordionContainers = document.querySelectorAll('.accordion-items .accordion-container');
+const accordionTitles = document.querySelectorAll('.cp-accordion .accordion-title');
 
-$($accordionTitle).click(function (e) {
-  e.preventDefault();
+accordionTitles.forEach(function(accordionTitle) {
+    accordionTitle.addEventListener('click', function() {
+        const openItem = !this.parentElement.classList.contains('open') && !this.parentElement.classList.contains('already-open');
 
-  $openItem = !$(this).parent().hasClass('open') && !$(this).parent().hasClass('already-open')
+        accordionContainers.forEach(container => ElementHelper.slideUp(container));
+        accordionItems.forEach(item => item.classList.remove('open', 'already-open'));
 
-  $accordionContainer.slideUp($toggleSpeed);
-  $accordionItem.removeClass('open already-open');
-
-  if ($openItem) {
-    $(this).siblings('.accordion-container').slideDown($toggleSpeed);
-    $(this).parent().addClass('open');
-  }
+        if (openItem) {
+            ElementHelper.slideDown(this.nextElementSibling);
+            this.parentElement.classList.add('open');
+        }
+    });
 });
