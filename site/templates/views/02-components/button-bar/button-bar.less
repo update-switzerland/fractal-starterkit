@@ -1,40 +1,43 @@
 .el-button-bar {
-  display: flex;
-  width: 100%;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
 
-  @media @min-tablet-hoch {
-    flex-direction: row;
-
-    &.centered {
-      justify-content: center;  
-    }
-
-    &.right {
-        justify-content: flex-end;  
-    }
-  }
-  
-  a.button,
-  button {
-    margin: 1.0rem 0;
-      &:first-child {
-        margin-top: 0;
-      }
-      &:last-child {
-        margin-bottom: 0;
-      }
-      
     @media @min-tablet-hoch {
-      margin: 0 @space-small;
-      &:first-child {
-        margin-left: 0;
-      }
-      &:last-child {
-        margin-right: 0;
-      }
+        flex-direction: row;
+
+        &.centered {
+            justify-content: center;
+        }
+
+        &.right {
+            justify-content: flex-end;
+        }
     }
-  }
+
+    a.button,
+    button {
+        margin: 1.0rem 0;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @media @min-tablet-hoch {
+            margin: 0 var(--space-small);
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
 }

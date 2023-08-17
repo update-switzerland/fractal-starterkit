@@ -4,22 +4,22 @@
   "context": {
     "accordionItems": [
       {
-				"isOpen" :"true",
+        "isOpen": "true",
         "accordionTitle": "Inhalt eins",
-        "hasContentText": {
+        "contentText": {
           "title": "Mit Titel",
           "contentText": "<p>Hier kann normaler Textinhalt stehen. Das ist Bilndtext, um zu sehen, wie der Text innerhalb des Akkordeons angezeigt wird</p>"
-        }   
+        }
       },
       {
         "accordionTitle": "Inhalt zwei",
-        "hasContentText": {
+        "contentText": {
           "contentText": "<ul><li>Hier gibt es nur eine Liste. Diese Liste hat 3 Zeilen. Das ist die Zeile eins!</li><li>Das ist die zweite Zeile.</li><li>Und das ist die letzte Zeile von drei Zeilen.</li></ul>"
         }
-      }, 
-			{
+      },
+      {
         "accordionTitle": "Dritter Inhalt",
-        "hasContentText": {
+        "contentText": {
           "title": "Auch mit Titel",
           "contentText": "<p>Hier kann normaler Textinhalt stehen. Das ist Bilndtext, um zu sehen, wie der Text innerhalb des Akkordeons angezeigt wird</p><p><h3>Und mit Link-Liste</h3><ul><li><a href='#'>Download Link eins</a></li><li><a href='#'>zweiter Link zum Downloaden</a></li><li><a href='#'>Letzter Link</a></li></ul>"
         }

@@ -5,21 +5,48 @@
   },
   "variants": [
     {
-      "name": "Image",
+      "name": "Image LinkBox",
       "context": {
         "modifier": "small",
+        "linkType": "linkbox",
         "urlImage": "../../img/content/dummy-img-3.jpg",
         "title": "Titel der Image-Media-Box (H2)",
         "text": "<p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.Das ist der Text der Media-Box.<br /> Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p>",
         "linkText": "mehr",
-        "hasLink": {
+        "linkBox": {
           "url": "./"
         }
       }
     },
     {
+      "name": "Image LinkList",
+      "context": {
+        "modifier": "small",
+        "urlImage": "../../img/content/dummy-img-3.jpg",
+        "title": "Titel der Image-Media-Box (H2)",
+        "text": "<p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.Das ist der Text der Media-Box.<br /> Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p>",
+        "linkList": [
+          {
+            "url": "./",
+            "linkText": "mehr",
+            "target" : false
+          },
+          {
+            "url": "./",
+            "linkText": "download PDF",
+            "target" : false
+          },
+          {
+            "url": "https://www.update.ch/",
+            "linkText": "to the website",
+            "target" : true
+          }
+        ]
+      }
+    },
+    {
       "name": "Video",
-      "context" : {
+      "context": {
         "modifier": "small",
         "urlVideo": "https://player.vimeo.com/video/463144779",
         "title": "Titel der Video-Media-Box (H2)",

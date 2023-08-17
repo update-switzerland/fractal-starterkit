@@ -1,49 +1,59 @@
 <div class="el-media-box {{ modifier }}">
-  <div class="inner">
+    <div class="inner {{ linkType }}">
 
-    <div class="media-container">
-        {{# urlImage }}
-          <figure>
-            <img src="{{ urlImage }}">
-          </figure>
-        {{/ urlImage }}
+        <div class="media-container">
+            {{# urlImage }}
+                <figure>
+                    <img src="{{ urlImage }}" alt="{{ altText }}">
+                </figure>
+            {{/ urlImage }}
 
-        {{# urlVideo }}
-          <div class="video">
-            <iframe src="{{ urlVideo }}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe>
-          </div>
-        {{/ urlVideo }}
-    </div>
-
-    <div class="text-container">
-      {{# title }}
-        {{# isEmbed }}
-        <h3>
-          {{ title }}
-        </h3>
-        {{/ isEmbed }}
-        {{^ isEmbed }}
-        <h2>
-          {{ title }}
-        </h2>
-        {{/ isEmbed }}
-      {{/ title }}
-
-      {{# text }}
-        <div class="content">
-            {{{ text }}}
+            {{# urlVideo }}
+                <div class="video">
+                    <iframe src="{{ urlVideo }}" allow="autoplay; fullscreen; picture-in-picture"
+                            allowfullscreen="">
+                    </iframe>
+                </div>
+            {{/ urlVideo }}
         </div>
-      {{/ text }}
 
-      {{# linkText }}
-        <div class="link-text">
-            <p>{{ linkText }}</p>
+        <div class="text-container">
+            {{# title }}
+                {{# isEmbed }}
+                    <h3>
+                        {{ title }}
+                    </h3>
+                {{/ isEmbed }}
+                {{^ isEmbed }}
+                    <h2>
+                        {{ title }}
+                    </h2>
+                {{/ isEmbed }}
+            {{/ title }}
+
+            {{# text }}
+                <div class="content">
+                    {{{ text }}}
+                </div>
+            {{/ text }}
+
+            {{# linkText }}
+                <div class="link-text">
+                    <p>{{ linkText }}</p>
+                </div>
+            {{/ linkText }}
+
+            {{# linkList }}
+                <div class="link-text">
+                    <a href="{{ url }}" {{# target }}target="_blank"{{/target}}>{{ linkText }}</a>
+                </div>
+            {{/linkList}}
+
+
         </div>
-      {{/ linkText }}
-    </div>
 
-    {{# hasLink }}
-      <a href="{{ url }}" class="link-box"></a> 
-    {{/ hasLink }}
-  </div>
+        {{# linkBox }}
+            <a href="{{ url }}" class="link-box"></a>
+        {{/ linkBox }}
+    </div>
 </div>

@@ -6,13 +6,13 @@
   {{/ galleryTitle }}
 
   <div class="gallery-container grid">
-    {{# hasGalleryItems }}
+    {{# galleryItems }}
       <div class="gallery-item">
         <a href="{{ urlImgBig }}" data-lightbox="click-light-box" data-title="{{ imgTitle }}">
-          <img src="{{ urlImgThumb }}">
+          <img src="{{ urlImgThumb }}" alt="{{ altText }}">
           <span class="icon-plus"></span>
         </a>
       </div>
-    {{/ hasGalleryItems }}
+    {{/ galleryItems }}
   </div>
 </div>

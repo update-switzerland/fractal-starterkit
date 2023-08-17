@@ -8,6 +8,7 @@
       {
         "modifier": "teaser",
         "urlImage": "../../img/content/dummy-img-1.jpg",
+        "altText": "Bildbeschreibung",
         "isEmbed": "true",
         "title": "Titel der Teaser-Box 1 (H3)",
         "text": "<p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.Das ist der Text der Media-Box.<br /> Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p>",
@@ -19,6 +20,7 @@
       {
         "modifier": "teaser",
         "urlImage": "../../img/content/dummy-img-3.jpg",
+        "altText": "Bildbeschreibung",
         "isEmbed": "true",
         "title": "Titel der Teaser-Box 2 (H3)",
         "text": "<p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.Das ist der Text der Media-Box.<br /> Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p>",
@@ -30,6 +32,7 @@
       {
         "modifier": "teaser",
         "urlImage": "../../img/content/dummy-img-7.jpg",
+        "altText": "Bildbeschreibung",
         "isEmbed": "true",
         "title": "Titel der Teaser-Box 3 (H3)",
         "text": "<p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.Das ist der Text der Media-Box.<br /> Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p>",

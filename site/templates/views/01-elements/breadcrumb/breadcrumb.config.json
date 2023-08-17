@@ -2,7 +2,7 @@
   "title": "Breadcrumb",
   "status": "prototype",
   "context": {
-    "hasBreadcrumbs": [
+    "breadcrumbs": [
       {
         "url": "./",
         "name": "Home"

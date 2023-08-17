@@ -17,51 +17,72 @@ _________________________________________________________________*/
 @header-height: 12.5rem;
 
 
-/* COLORS 
-_________________________________________________________________*/
-@color-brand: #8b7601;        // Gold
-@color-brand-light: #dcd5b9;
+:root {
+    /* COLORS ___________________________________________________*/
 
-@color-error: #cc0000;    // Red
-@color-success: #00aa00;  // Green
+    --color-brand: #8b7601;             // Gold
+    --color-brand-light: #dcd5b9;       // Gold light
+    --white: #fff;
+    --black: #000;
+    --grey: #777777;
 
-@white: #ffffff;
-@black: #000000;
-
-/* FONTS 
-_________________________________________________________________*/
-@font-family-base: 'OpenSans', Arial, Helvetica, Sans-serif;
-@font-family-alt: 'OpenSansCondensed', Arial, Helvetica, Sans-serif; 
-
-@font-size-base: 1.8rem;
-@line-height-base: 2.7rem;
-
-@font-size-lead: 2.1rem;
-@font-size-lead-mobile: 2.0rem;
-@line-height-lead: 3.0rem;
-
-@font-weight-regular: 400;
-@font-weight-bold: 700;
-
-@font-size-h1: 3.6rem;
-@font-size-h1-mobile: 3.0rem;
-@font-size-h2: 3.0rem;
-@font-size-h2-mobile: 2.7rem;
-@font-size-h3: 2.4rem;
-@font-size-h4: 2.1rem;
+    --error: #cc0000;
+    --success: #00aa00;
 
 
-/* SPACES
-_________________________________________________________________*/
-@space-x-small: 0.5rem;
-@space-small: 1.5rem;
-@space-medium: 2.5rem;
-@space-large: 5.0rem;
-@space-x-large: 7.5rem;
-@margin-grid: 2.5rem;
-@margin-grid-minus: -2.5rem;
+    /* FONTS ____________________________________________________*/
+
+    --font-family-base: 'OpenSans', Arial, Helvetica, Sans-serif;
+    --font-family-alt: 'OpenSansCondensed', Arial, Helvetica, Sans-serif;
+
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+    --font-size-base: 1.8rem;
+    --line-height-base: 2.7rem;
+
+    --font-size-lead: 2.1rem;
+    --line-height-lead: 3.0rem;
+
+    --font-size-h1: 3.6rem;
+    --font-size-h2: 3rem;
+    --font-size-h3: 2.4rem;
+    --font-size-h4: 2.1rem;
+    --font-size-h5: 1.8rem;
+
+    @media @min-tablet-hoch {
+        --font-size-lead: 2.0rem;
+        --font-size-h1: 3.0rem;
+        --font-size-h2: 2.7rem;
+        --font-size-h3: 2.1rem;
+        --font-size-h4: 2.0rem;
+    }
 
 
-/* ANIMATIONS
-_________________________________________________________________*/
-@anim-duration: 0.2s;
+    /* SPACES ____________________________________________________*/
+
+    --space-x-small: .5rem;
+    --space-small: 1.5rem;
+    --space-medium: 2.5rem;
+    --space-large: 5.0rem;
+    --space-x-large: 7.5rem;
+    --margin-grid: 2.5rem;
+    --margin-grid-minus: -2.5rem;
+
+
+    /* ANIMATIONS ________________________________________________*/
+
+    --anim-duration: .2s;
+
+}
+
+
+
+
+
+
+
+
+
+
+

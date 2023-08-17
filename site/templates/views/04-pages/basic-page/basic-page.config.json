@@ -7,11 +7,11 @@
     "contentItems": [
       {
         "sectionName":"breadcrumb",
-        "hasBreadcrumb": "@breadcrumb"
+        "breadcrumb": "@breadcrumb"
       },
       {
         "sectionName":"page-title",
-        "hasPageTitle": "@page-title"
+        "pageTitle": "@page-title"
       },
       {
         "sectionName":"txt-img-content",
@@ -19,11 +19,11 @@
       },
       {
         "sectionName":"accordion",
-        "hasAccordion": "@accordion"
+        "accordion": "@accordion"
       },
       {
         "sectionName":"media-box big",
-        "hasMediaBox": {
+        "mediaBox": {
           "modifier": "big",
           "urlVideo": "https://player.vimeo.com/video/463144779",
           "title": "Titel der Video-Media-Box Big (H2)",
@@ -32,11 +32,11 @@
       },
       {
         "sectionName":"image-gallery",
-        "hasImageGallery": "@image-gallery"
+        "imageGallery": "@image-gallery"
       },
       {
         "sectionName":"media-box medium",
-        "hasMediaBox": {
+        "mediaBox": {
           "modifier": "medium",
           "urlImage": "../../img/content/dummy-img-1.jpg",
           "title": "Titel der Image-Media-Box Medium (H2)",
@@ -45,15 +45,15 @@
       },
       {
         "sectionName":"teaser-bar",
-        "hasTeaserBar": "@teaser-bar"
+        "teaserBar": "@teaser-bar"
       },
       {
         "sectionName":"button-bar",
-        "hasButtonBar": "@button-bar"
+        "buttonBar": "@button-bar"
       },
       {
         "sectionName":"media-box small",
-        "hasMediaBox": [
+        "mediaBox": [
           {
             "modifier": "small",
             "urlImage": "../../img/content/dummy-img-9.jpg",

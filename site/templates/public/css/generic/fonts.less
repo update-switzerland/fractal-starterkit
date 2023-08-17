@@ -22,60 +22,54 @@ html {
 }
 
 body {
-  font-size: @font-size-base;
-  font-family: @font-family-base;
-  font-weight: @font-weight-regular;
-  line-height: @line-height-base;
+  font-size: var(--font-size-base);
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-base);
 }
   
 p {
-  margin: 0 0 @space-small;
+  margin: 0 0 var(--space-small);
 
   &.lead {
-    font-family: @font-family-alt;  
-    font-weight: @font-weight-bold;
-    font-size: @font-size-lead-mobile;
-    @media @min-tablet-hoch {
-      font-size: @font-size-lead;
-    }
+    font-family: var(--font-family-alt);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-lead-mobile);
   }
 }
 
 h1, h2, h3, h4 {
-  font-family: @font-family-alt;  
-  font-weight: @font-weight-bold;
+  font-family: var(--font-family-alt);
+  font-weight: var(--font-weight-bold);
   margin: 0;
   padding: 0;
 }
   
 h1 {
-  font-family: @font-family-alt;  
-  font-size: @font-size-h1-mobile;
+  font-family: var(--font-family-alt);
+  font-size: var(--font-size-h1-mobile);
   line-height: 1.25;
-  margin-bottom: @space-small;
-  @media @min-tablet-hoch {
-    font-size: @font-size-h1;
-  }
+  margin-bottom: var(--space-small);
 }
+
 h2 {
-  font-family: @font-family-alt;  
-  font-size: @font-size-h2-mobile;
+  font-family: var(--font-family-alt);
+  font-size: var(--font-size-h2-mobile);
   line-height: 1.25;
-  margin-bottom: @space-small;
-  @media @min-tablet-hoch {
-    font-size: @font-size-h2;
-  }
+  margin-bottom: var(--space-small);
 }
+
 h3 {
-  font-family: @font-family-alt;  
-  font-size: @font-size-h3;
+  font-family: var(--font-family-alt);
+  font-size: var(--font-size-h3);
   line-height: 1.25;
-  margin-bottom: @space-small;
+  margin-bottom: var(--space-small);
 }
+
 h4 {
-  font-family: @font-family-alt;  
-  font-size: @font-size-h4;
-  margin-bottom: @space-small;
+  font-family: var(--font-family-alt);
+  font-size: var(--font-size-h4);
+  margin-bottom: var(--space-small);
 }
 
 a.link-box {
@@ -92,12 +86,12 @@ a.link-box {
 
 .accordion-container {
   a {
-    color: @black;
+    color: var(--black);
     text-decoration: none;
-    border-bottom: 2px solid @color-brand;
+    border-bottom: 2px solid var(--color-brand);
 
     &:hover {
-      border-bottom: 2px dotted @color-brand; 
+      border-bottom: 2px dotted var(--color-brand);
     }
   }
 }
