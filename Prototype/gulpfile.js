@@ -18,7 +18,7 @@ gulp.task('less',function() {
         '../site/templates/public/css/main.less',
         '../site/templates/views/**/*.less',
         '../site/templates/public/vendor/lightbox/css/lightbox.less',
-        '../site/templates/public/vendor/slick/slick.less',
+        '../site/templates/public/vendor/glide/glide.core.min.css',
     ])
     .pipe(sourcemaps.init())
     .pipe(customPlumber('Error running Less'))

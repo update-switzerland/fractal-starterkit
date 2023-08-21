@@ -1,0 +1,48 @@
+{
+  "title": "Slider",
+  "status": "ready",
+  "context": {
+    "slides": [
+      {
+        "title": "Dummy Bild Container",
+        "img": "../../img/content/dummy-slider-img-7.jpg",
+        "slideBox": {
+          "titleSlideBox": "Titel Slide-Box 1",
+          "textSlideBox": "Hier kommt ein kurzer Text für die erste Slide-Box.",
+          "linkText": "weiter lesen"
+        },
+        "url": "./"
+      },
+      {
+        "title": "Dummy Bild Sportler",
+        "img": "../../img/content/dummy-slider-img-1.jpg",
+        "slideBox": {
+          "titleSlideBox": "Titel Slide-Box 2",
+          "textSlideBox": "Hier kommt ein kurzer Text für die zweite Slide-Box.",
+          "linkText": "mehr erfahren"
+        },
+        "url": "./"
+      },
+      {
+        "title": "Dummy Bild Zebra",
+        "img": "../../img/content/dummy-slider-img-3.jpg",
+        "slideBox": {
+          "titleSlideBox": "Titel Slide-Box 3",
+          "textSlideBox": "Hier kommt ein kurzer Text für die dritte Slide-Box.",
+          "linkText": "mehr erfahren"
+        },
+        "url": "./"
+      },
+      {
+        "title": "Dummy Bild Hund",
+        "img": "../../img/content/dummy-slider-img-4.jpg",
+        "slideBox": {
+          "titleSlideBox": "Titel Slide-Box 4",
+          "textSlideBox": "Hier kommt ein kurzer Text für die vierte Slide-Box.",
+          "linkText": "mehr erfahren"
+        },
+        "url": "./"
+      }
+    ]
+  }
+}

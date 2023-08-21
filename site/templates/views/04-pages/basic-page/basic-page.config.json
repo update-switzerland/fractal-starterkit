@@ -10,6 +10,10 @@
         "breadcrumb": "@breadcrumb"
       },
       {
+        "sectionName":"slider",
+        "slider": "@slider"
+      },
+      {
         "sectionName":"page-title",
         "pageTitle": "@page-title"
       },

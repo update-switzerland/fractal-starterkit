@@ -1,0 +1,37 @@
+<div class="el-slider">
+    <div class="glide__track" data-glide-el="track">
+        <div class="glide__slides">
+            {{# slides }}
+                <div class="glide__slide">
+                    <figure>
+                        <img src="{{ img }}" alt="{{ title }}">
+                    </figure>
+
+                    {{# slideBox }}
+                        <div class="slide-box">
+                            <div class="inner">
+                                <h2>
+                                    {{ titleSlideBox }}
+                                </h2>
+
+                                <p>
+                                    {{ textSlideBox }}
+                                </p>
+
+                                <p class="link-text">
+                                    {{ linkText }}
+                                </p>
+
+                            </div>
+                        </div>
+                    {{/ slideBox }}
+
+                    <a href="{{ url }}" class="link-box"></a>
+
+                </div>
+            {{/ slides }}
+        </div>
+    </div>
+    <div class="glide__bullets" data-glide-el="controls[nav]">
+    </div>
+</div>

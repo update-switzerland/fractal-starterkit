@@ -1,0 +1,90 @@
+.el-slider {
+    .glide__slide {
+        position: relative;
+
+        .slide-box {
+            position: absolute;
+            width: ~"calc(100% - 5rem)";
+            background-color: var(--color-brand-50);
+            border: 1px solid var(--color-brand-100);
+            left: var(--space-medium);
+            bottom: var(--space-medium);
+            transition: var(--anim-duration);
+            display: none;
+
+            @media @min-mobile-medium {
+                display: block;
+            }
+
+            @media @min-tablet-hoch {
+                left: var(--space-large);
+                bottom: var(--space-large);
+                width: ~"calc(50% - 5rem)";
+            }
+
+            @media @min-desktop {
+                width: ~"calc(33.33% - 5rem)";
+            }
+
+            .inner {
+                padding: var(--space-small) var(--space-medium);
+
+                @media @min-tablet-hoch {
+                    padding: var(--space-medium);
+                }
+                h2,
+                p {
+                    color: var(--white)
+                }
+                p {
+                    display: none;
+                    @media @min-mobile-large {
+                        display: block;
+                    }
+                }
+                .link-text {
+                    display: inline-block;
+                    border: 1px solid var(--white);
+                    padding: var(--space-x-small) var(--space-small);
+                }
+            }
+        }
+
+        &:hover {
+            cursor: pointer;
+            .slide-box {
+                background-color: var(--color-brand-100);
+                .link-text {
+                    display: inline-block;
+                    border: 1px solid var(--white);
+                    background-color: var(--white);
+                    color: var(--color-brand);
+                }
+            }
+        }
+    }
+    .glide__bullets {
+        text-align: center;
+
+        .glide__bullet {
+            cursor: pointer;
+            height: 9px;
+            width: 45px;
+            margin: 17px 10px;
+            padding: 0;
+            border: 1px solid var(--color-brand);
+            background-color: var(--color-brand);
+            transition: var(--anim-duration);
+            text-indent: -9999em;
+            outline: none;
+
+            &:hover {
+                background-color: var(--color-brand-light);
+            }
+
+            &.glide__bullet--active {
+                background-color: var(--white);
+            }
+        }
+    }
+}
