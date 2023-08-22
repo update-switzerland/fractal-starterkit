@@ -8,7 +8,6 @@ const ElementHelper = {
     },
 
     slideUp(element) {
-        console.log(element)
         element.style.height = element.clientHeight + 'px';
         setTimeout(() => element.style.height = '0');
     }
