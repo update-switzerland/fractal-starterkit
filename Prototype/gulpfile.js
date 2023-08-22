@@ -17,7 +17,6 @@ gulp.task('less',function() {
     return gulp.src([
         '../site/templates/public/css/main.less',
         '../site/templates/views/**/*.less',
-        '../site/templates/public/vendor/lightbox/css/lightbox.less',
         '../site/templates/public/vendor/glide/glide.core.min.css',
     ])
     .pipe(sourcemaps.init())
