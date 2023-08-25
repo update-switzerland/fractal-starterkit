@@ -13,7 +13,7 @@
         "title": "Titel der Teaser-Box 1 (H3)",
         "text": "<p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.Das ist der Text der Media-Box.<br /> Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p>",
         "linkText": "mehr",
-        "hasLink": {
+        "linkBox": {
           "url": "./"
         }
       },
@@ -25,7 +25,7 @@
         "title": "Titel der Teaser-Box 2 (H3)",
         "text": "<p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.Das ist der Text der Media-Box.<br /> Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p>",
         "linkText": "mehr",
-        "hasLink": {
+        "linkBox": {
           "url": "./"
         }
       },
@@ -37,7 +37,7 @@
         "title": "Titel der Teaser-Box 3 (H3)",
         "text": "<p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.Das ist der Text der Media-Box.<br /> Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p>",
         "linkText": "mehr",
-        "hasLink": {
+        "linkBox": {
           "url": "./"
         }
       }

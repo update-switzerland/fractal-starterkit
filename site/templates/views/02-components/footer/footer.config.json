@@ -8,19 +8,23 @@
 		"socialMediaItems": [
 			{
 				"url": "#",
-				"name": "facebook"
+				"name": "facebook",
+				"title": "zu unserem Facebook-Kanal"
 			},
 			{
 				"url": "#",
-				"name": "twitter"
+				"name": "twitter",
+				"title": "zu unserem Twitter-Kanal"
 			},
 			{
 				"url": "#",
-				"name": "xing"
+				"name": "xing",
+				"title": "zu unserem Xing-Kanal"
 			},
 			{
 				"url": "#",
-				"name": "vimeo"
+				"name": "vimeo",
+				"title": "zu unserem Vimeo-Kanal"
 			}
 		]
 	}

@@ -1,24 +1,31 @@
 <header class="cp-header">
     <div class="page-wrapper">
         <div class="inner">
+
             <div class="logo-bar">
-                <img src="{{ cfg.img_path }}logo-neg.svg" class="logo" alt="{{ altText }}">
+                <a href="./" title="{{ logo.title }}">
+                    <img src="{{ logo.img }}" class="logo" alt="{{ logo.altText }}">
+                </a>
             </div>
 
             <div class="nav-bar">
                 <div class="search">
                     <div class="search-form-container">
-                        <form methode="get" action="/suche/" class="search-form">
+                        <form method="get" action="/suche/" class="search-form">
                             <input type="text" name="q" class="">
                         </form>
-                        <span class="icon icon-search"></span>
+                        <button aria-label="Suche öffnen">
+                            <span class="icon icon-search"></span>
+                        </button>
                     </div>
                 </div>
                 <div class="nav-container">
                     {{{ mainNavigation }}}
 
                     <div class="mob-nav">
-                        <a href="#" class="icon icon-menu"></a>
+                        <button aria-label="Menu öffnen">
+                            <a href="#" class="icon icon-menu"></a>
+                        </button>
                     </div>
                 </div>
             </div>
