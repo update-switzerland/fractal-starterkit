@@ -1,0 +1,282 @@
+/* CSS Form-Builder update.ch */
+/* font family and size for Inputfield forms */
+
+body.InputfieldColumnWidthsInit {
+    margin-top: -1px;
+}
+
+.Inputfield input:-webkit-autofill,
+.Inputfield input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+.Inputfield input:focus,
+.Inputfield textarea:focus,
+.Inputfield select:focus {
+    outline: none !important;
+    border: 1px solid var(--grey) !important;
+}
+
+.FormBuilder,
+.Inputfield,
+.Inputfield input,
+.Inputfield textarea,
+.Inputfield select,
+.Inputfield button,
+.ui-widget {
+    font-family: var(--font-family-base);
+    font-size: 18px;
+    line-height: 27px;
+    box-sizing: border-box;
+}
+
+.Inputfield {
+    margin: 0;
+}
+
+.InputfieldContent {
+    font-family: var(--font-family-base);
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 300;
+}
+
+.InputfieldHeader {
+    font-family: var(--font-family-base);
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 300;
+}
+
+.success {
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+/* additional padding for inputs and textareas */
+
+.Inputfield input,
+.Inputfield select {
+    height: 38px;
+}
+
+.Inputfield input,
+.Inputfield textarea,
+.Inputfield select {
+    width: 100%;
+    padding: 0;
+    border: 1px solid var(--grey);
+}
+
+.InputfieldText,
+.InputfieldEmail,
+.InputfieldTextarea {
+    position: relative;
+    label {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        color: var(--black);
+        opacity: 1;
+        transition: var(--anim-duration);
+
+        &.focused,
+        &.filled {
+            left: 0;
+            top: -25px;
+            font-size: 14px;
+            opacity: 0.7;
+        }
+    }
+}
+
+/* error messages */
+
+.FormBuilder .error,
+.InputfieldForm .error {
+    color: var(--error);
+    font-weight: bold;
+}
+
+/* wrapper for label + input */
+
+.Inputfield {
+    margin-bottom: 2em;
+}
+
+fieldset.Inputfield {
+    margin-bottom: 0;
+}
+
+
+/* submit button */
+
+.InputfieldForm button {
+    padding: 0.5em 1em;
+}
+
+
+/* label header */
+
+.Inputfield .InputfieldHeader {
+    display: block;
+    padding-bottom: 0.25em;
+}
+
+/* show a customized-colored asterisk after label when field "required" */
+
+.InputfieldStateRequired>.InputfieldHeader:first-child:after {
+    color: var(--grey) !important;
+    content: '*';
+}
+
+/* descriptive text within Inputfields */
+
+.Inputfield .notes,
+.Inputfield .description {
+    margin-bottom: 0.25em;
+    margin-top: 0;
+    opacity: 0.6;
+}
+
+/* styling for fieldsets and legend */
+
+fieldset.InputfieldFieldset {
+    padding: 0;
+    border: none;
+}
+
+fieldset.InputfieldFieldset legend {
+    font-family: var(--font-family-base);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-h2);
+    line-height: 1.25;
+    margin-bottom: var(--space-small);
+}
+
+/* honeypot */
+
+#wrap_Inputfield- {
+    display: none;
+}
+
+.Inputfield {
+    button {
+        background-color: var(--color-brand);
+        border: 1px solid var(--color-brand);
+        color: var(--white);
+        padding: var(--space-x-small) 3.0rem;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-family: var(--font-family-alt);
+        font-weight: var(--font-weight-bold);
+        font-size: var(--font-size-base);
+        transition: var(--anim-duration);
+
+        &:hover {
+            background-color: var(--color-brand-light);
+            border: 1px solid var(--color-brand);
+            color: var(--color-brand);
+        }
+    }
+}
+
+/* clearfix */
+
+.pw-clearfix:before,
+.pw-clearfix:after {
+    content: "";
+    display: table;
+    border-collapse: collapse;
+}
+
+.pw-clearfix:after {
+    clear: both;
+}
+
+/* Schöne Check- und Radio-Buttons
+-----------------------------------------------------------------------*/
+input[type="radio"],
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type='checkbox']:checked,
+input[type='checkbox']:not(:checked),
+input[type='radio']:checked,
+input[type='radio']:not(:checked) {
+    background: transparent;
+    position: relative;
+    visibility: hidden;
+    margin:0;
+    padding:0;
+}
+
+input[type='checkbox'] + span,
+input[type='radio'] + span {
+    cursor: pointer;
+}
+
+input[type='checkbox']:checked + span::before,
+input[type='checkbox']:not(:checked) + span::before,
+input[type='radio']:checked + span::before,
+input[type='radio']:not(:checked) + span::before {
+    content:' ';
+    display:inline-block;
+    width: 21px;
+    height: 21px;
+    position: relative;
+    top: 4px;
+    border: 1px solid var(--black);
+    background: var(--white);
+    margin-right: 10px;
+    box-shadow: inset 0 1px 1px 0 rgba(0,0,0,.1);
+}
+
+input[type=radio]:checked + span::before,
+input[type=radio]:not(:checked) + span::before {
+    border-radius: 30px;
+}
+
+@media (hover: hover) {
+    input[type='checkbox']:hover + span::before,
+    input[type='radio']:hover + span::before {
+        background: var(--grey);
+        box-shadow: inset 0 0 0 2px var(--white);
+    }
+}
+
+input[type='checkbox']:checked  + span::before,
+input[type='radio']:checked  + span::before {
+    background: var(--color-brand);
+    box-shadow: inset 0 0 0 2px var(--white);
+}
+
+.pw-no-select {
+    display: inline-block;
+    padding-left: 33px;
+    padding-right: 25px;
+    width: 100%;
+    &::before {
+        margin-left: -33px;
+    }
+}
+
+input[type="checkbox"] + span::before {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+    background-image: url(../../img/checkbox-default.png);
+}
+
+@media (hover: hover) {
+    input[type="checkbox"]:hover + span::before {
+        background-image: url(../../img/checkbox-hover.png)
+    }
+}
+
+input[type="checkbox"]:checked + span::before {
+    background-image: url(../../img/checkbox-checked.png)
+}

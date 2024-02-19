@@ -1,0 +1,28 @@
+{
+	"title": "Social Media Share Button",
+	"status": "prototype",
+	"context": {
+        "socialmediaShareItems": [
+            {
+                "someUrl": "./",
+                "someIcon": "icon-twitter"
+            },
+            {
+                "someUrl": "./",
+                "someIcon": "icon-facebook"
+            },
+            {
+                "someUrl": "./",
+                "someIcon": "icon-linkedin"
+            },
+            {
+                "someUrl": "./",
+                "someIcon": "icon-whatsapp"
+            },
+            {
+                "someUrl": "./",
+                "someIcon": "icon-mail"
+            }
+        ]
+	}
+}

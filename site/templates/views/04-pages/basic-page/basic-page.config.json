@@ -30,7 +30,7 @@
         "mediaBox": {
           "modifier": "big",
           "urlVideo": "https://player.vimeo.com/video/463144779",
-          "title": "Titel der Video-Media-Box Big (H2)",
+          "title": "Big Media-Box mit Video (H2)",
           "text": "<p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.Das ist der Text der Media-Box.<br /> Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p>"
         }
       },
@@ -43,7 +43,7 @@
         "mediaBox": {
           "modifier": "medium",
           "urlImage": "../../img/content/dummy-img-1.jpg",
-          "title": "Titel der Image-Media-Box Medium (H2)",
+          "title": "Medium Media-Box mit Image (H2)",
           "text": "<p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p><p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p>"
         }
       },
@@ -60,31 +60,47 @@
         "mediaBox": [
           {
             "modifier": "small",
-            "urlImage": "../../img/content/dummy-img-9.jpg",
-            "title": "Erster Titel der Image-Media-Box Small (H2)",
-            "text": "<p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.Das ist der Text der Media-Box.<br /> Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p>",
+            "linkType": "linkbox",
+            "urlImage": "../../img/content/dummy-img-9-16-9.jpg",
+            "title": "Small Media-Box mit Image und Linkbox (H2)",
+            "text": "<p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box.<br /> Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p>",
             "linkText": "mehr",
-            "hasLink": {
+            "linkBox": {
               "url": "./"
             }
           },
           {
             "modifier": "small",
-            "urlImage": "../../img/content/dummy-img-4.jpg",
-            "title": "Zweiter Titel der Image-Media-Box Small (H2)",
-            "text": "<p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.Das ist der Text der Media-Box.<br /> Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p>",
-            "linkText": "mehr",
-            "hasLink": {
-              "url": "./"
-            }
+            "linkType": "linklist",
+            "urlImage": "../../img/content/dummy-img-12-16-9.jpg",
+            "title": "Small Media-Box mit Image und Linkliste (H2)\"",
+            "text": "<p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box.<br /> Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p>",
+            "linkList": [
+              {
+                "url": "./",
+                "linkText": "mehr",
+                "target" : false
+              },
+              {
+                "url": "./",
+                "linkText": "download PDF",
+                "target" : false
+              },
+              {
+                "url": "https://www.update.ch/",
+                "linkText": "to the website",
+                "target" : true
+              }
+            ]
           },
           {
             "modifier": "small",
-            "urlImage": "../../img/content/dummy-img-6.jpg",
-            "title": "Dritter Titel der Image-Media-Box Small (H2)",
-            "text": "<p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.Das ist der Text der Media-Box.<br /> Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p>",
+            "linkType": "linkbox-video",
+            "urlVideo": "https://player.vimeo.com/video/463144779",
+            "title": "Small Media-Box mit Video und Linkbox (H2)",
+            "text": "<p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box.<br /> Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p>",
             "linkText": "mehr",
-            "hasLink": {
+            "videoLinkBox": {
               "url": "./"
             }
           }

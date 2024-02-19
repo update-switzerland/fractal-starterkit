@@ -30,33 +30,28 @@
         }
 
         .text-container {
-            .link-text {
-                h2,
-                h3 {
-                    transition: var(--anim-duration);
-                }
-
-                p{
+            h2 {
+                &.background {
                     opacity: 1;
-                    display: inline-block;
-                    color: var(--black);
-                    text-decoration: none;
-                    border-bottom: 2px solid var(--color-brand);
+                    color: var(--white);
+                    -webkit-hyphens: auto;
+                    hyphens: auto;
+                    padding-top: 0.5rem;
                     transition: var(--anim-duration);
 
-                    @media @min-tablet-quer {
-                        opacity: 0;
-                    }
-                }
-                a {
-                    opacity: 1;
-                    display: inline-block;
-                    color: var(--black);
-                    text-decoration: none;
-                    border-bottom: 2px solid var(--color-brand);
 
-                    &:hover {
-                        color: var(--color-brand);
+                    span {
+                        opacity: 1;
+                        background-color: var(--color-brand);
+                        padding-left: 1rem;
+                        padding-right: 1rem;
+                        padding-top: 0.25rem;
+                        padding-bottom: 0.5rem;
+                        line-height: 1.375;
+                        box-decoration-break: clone;
+                        -webkit-box-decoration-break: clone;
+                        transition: var(--anim-duration);
+                        border-radius: 5px;
                     }
                 }
             }
@@ -66,14 +61,40 @@
             &:hover {
                 cursor: pointer;
                 h2,
-                h3 {
-                    color: var(--color-brand);
-                }
-                
                 .link-text {
-                    p {
-                        opacity: 1;
+                    color: var(--color-brand);
+
+                    &.background {
+                        color: var(--white);
+                        opacity: 0.75;
+
+                        span {
+                            opacity: 0.75;
+                            background-color: var(--color-brand);
+                        }
+                    }
+                }
+            }
+        }
+
+        &.linkbox-video {
+            .text-container {
+                position: relative;
+
+                &:hover {
+                    cursor: pointer;
+                    h2,
+                    .link-text {
                         color: var(--color-brand);
+
+                        &.background {
+                            color: var(--white);
+
+                            span {
+                                opacity: 0.75;
+                                background-color: var(--color-brand);
+                            }
+                        }
                     }
                 }
             }
@@ -100,7 +121,7 @@
 
                 .media-container {
                     width: 50%;
-                    padding-right: var(--space-medium);
+                    padding-right: 20px;
 
                     figure {
                         margin-top: var(--space-x-small);
@@ -115,17 +136,20 @@
 
                 .text-container {
                     width: 50%;
-                    padding-left: var(--space-medium);
+                    padding-left: 20px;
                 }
             }
 
             @media @min-tablet-hoch {
                 .media-container {
                     width: 33.33%;
+                    padding-right: 27px;
+
                 }
 
                 .text-container {
                     width: 66.66%;
+                    padding-left: 13px;
                 }
             }
         }
@@ -138,7 +162,7 @@
 
                 .media-container {
                     width: 50%;
-                    padding-right: var(--space-medium);
+                    padding-right: 20px;
 
                     figure {
                         margin-top: var(--space-x-small);
@@ -153,7 +177,7 @@
 
                 .text-container {
                     width: 50%;
-                    padding-left: var(--space-medium);
+                    padding-left: 20px;
                 }
             }
         }
@@ -163,21 +187,10 @@
         .inner {
             .text-container {
                 width: 100%;
+
                 @media @min-tablet-quer {
                     width: 66.66%;
                 }
-            }
-        }
-    }
-
-    &.teaser {
-        .inner {
-            .media-container {
-                width: 100%;
-            }
-
-            .text-container {
-                width: 100%;
             }
         }
     }

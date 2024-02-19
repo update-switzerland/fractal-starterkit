@@ -6,38 +6,47 @@
     "column": 3,
     "hasTeaserItems": [
       {
-        "modifier": "teaser",
-        "urlImage": "../../img/content/dummy-img-1.jpg",
+        "linkType": "linkbox",
+        "urlImage": "../../img/content/dummy-img-1-16-9.jpg",
         "altText": "Bildbeschreibung",
-        "isEmbed": "true",
-        "title": "Titel der Teaser-Box 1 (H3)",
-        "text": "<p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.Das ist der Text der Media-Box.<br /> Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p>",
+        "title": "Image Teaser mit Linkbox (H3)",
+        "text": "<p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box.<br /> Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p>",
         "linkText": "mehr",
         "linkBox": {
           "url": "./"
         }
       },
       {
-        "modifier": "teaser",
-        "urlImage": "../../img/content/dummy-img-3.jpg",
+        "linkType": "linklist",
+        "urlImage": "../../img/content/dummy-img-3-16-9.jpg",
         "altText": "Bildbeschreibung",
-        "isEmbed": "true",
-        "title": "Titel der Teaser-Box 2 (H3)",
-        "text": "<p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.Das ist der Text der Media-Box.<br /> Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p>",
-        "linkText": "mehr",
-        "linkBox": {
-          "url": "./"
-        }
+        "title": "Image Teaser mit Linklist  (H3)",
+        "text": "<p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box.<br /> Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p>",
+        "linkList": [
+          {
+            "url": "./",
+            "linkText": "mehr",
+            "target": false
+          },
+          {
+            "url": "./",
+            "linkText": "download PDF",
+            "target": false
+          },
+          {
+            "url": "https://www.update.ch/",
+            "linkText": "to the website",
+            "target": true
+          }
+        ]
       },
       {
-        "modifier": "teaser",
-        "urlImage": "../../img/content/dummy-img-7.jpg",
-        "altText": "Bildbeschreibung",
-        "isEmbed": "true",
-        "title": "Titel der Teaser-Box 3 (H3)",
-        "text": "<p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.Das ist der Text der Media-Box.<br /> Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p>",
+        "linkType": "linkbox-video",
+        "urlVideo": "https://player.vimeo.com/video/463144779",
+        "title": "Video Teaser mit Linkbox  (H3)",
+        "text": "<p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box.<br /> Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p>",
         "linkText": "mehr",
-        "linkBox": {
+        "videoLinkBox": {
           "url": "./"
         }
       }

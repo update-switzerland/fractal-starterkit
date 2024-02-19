@@ -10,8 +10,8 @@
         "modifier": "small",
         "linkType": "linkbox",
         "urlImage": "../../img/content/dummy-img-3.jpg",
-        "title": "Titel der Image-Media-Box (H2)",
-        "text": "<p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.Das ist der Text der Media-Box.<br /> Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p>",
+        "title": "Titel: Image Teaser mit Linkbox (H2)",
+        "text": "<p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box.<br /> Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p>",
         "linkText": "mehr",
         "linkBox": {
           "url": "./"
@@ -22,9 +22,10 @@
       "name": "Image LinkList",
       "context": {
         "modifier": "small",
-        "urlImage": "../../img/content/dummy-img-3.jpg",
-        "title": "Titel der Image-Media-Box (H2)",
-        "text": "<p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.Das ist der Text der Media-Box.<br /> Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p>",
+        "linkType": "linklist",
+        "urlImage": "../../img/content/dummy-img-3-16-9.jpg",
+        "title": "Titel: Image Teaser mit Linkliste (H2)",
+        "text": "<p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box.<br /> Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p>",
         "linkList": [
           {
             "url": "./",
@@ -48,9 +49,15 @@
       "name": "Video",
       "context": {
         "modifier": "small",
+        "linkType": "linkbox-video",
         "urlVideo": "https://player.vimeo.com/video/463144779",
-        "title": "Titel der Video-Media-Box (H2)",
-        "text": "<p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.Das ist der Text der Media-Box.<br /> Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p>"
+        "titleType": "background",
+        "title": "Titel: Video Teaser mit Linkbox (H2) und noch viel mehr. Der Titel muss lang sein!",
+        "text": "<p>Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box.<br /> Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen. Das ist der Text der Media-Box. Hier wird HTML Text reingezogen.</p>",
+        "linkText": "mehr",
+        "videoLinkBox": {
+          "url": "./"
+        }
       }
     }
   ]

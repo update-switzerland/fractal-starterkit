@@ -1,0 +1,78 @@
+.el-button-socialmedia-share {
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    
+    .share-links {
+        position: relative;
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 48px;
+
+        i {
+            border: 1px solid transparent;
+            font-size: 3rem;
+            padding: 0.8rem 1.2rem 0.8rem 1rem;
+            height: 48px;
+            transition-duration: var(--anim-duration);
+            color: var(--color);
+            background: var(--white);
+            z-index: 1;
+            
+            &:hover {
+                color: var(--color-brand);;
+                cursor: pointer;
+            }
+        }
+        
+        ul.some-share {
+            position: absolute;
+            top: 3px;
+            right: -300px;
+            display: flex;
+            flex-direction: row;
+            height: 40px;
+            margin-right: 25px;
+            transition: var(--anim-duration);
+
+            li {
+                margin-right: 20px;
+                display: flex;
+                align-items: center;
+
+                a {
+                    text-decoration: none;
+
+                    &:before {
+                        font-size: 2.6rem;
+                        color: var(--color-brand);
+                        transition-duration: var(--anim-duration);
+                    }
+
+                    &:hover {
+                        &:before {
+                            color: var(--black);
+                        }
+                    }
+                }
+
+                &:last-child {
+                    margin-right: 0px;
+                }
+            }
+        }
+
+        &.open {
+            i {
+                margin-left: 0;
+                color: var(--color-brand);
+            }
+
+            ul.some-share {
+                right: 40px;
+            }
+        }
+    }
+}

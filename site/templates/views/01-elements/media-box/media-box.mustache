@@ -19,16 +19,10 @@
 
         <div class="text-container">
             {{# title }}
-                {{# isEmbed }}
-                    <h3>
-                        {{ title }}
-                    </h3>
-                {{/ isEmbed }}
-                {{^ isEmbed }}
-                    <h2>
-                        {{ title }}
-                    </h2>
-                {{/ isEmbed }}
+                <h2 class="{{ titleType }}">
+                    <!-- Den Span braucht es nur wenn Hintergrund gesetzt wird! -->
+                    <span>{{ title }}</span>
+                </h2>
             {{/ title }}
 
             {{# text }}
@@ -44,11 +38,14 @@
             {{/ linkText }}
 
             {{# linkList }}
-                <div class="link-text">
+                <div class="link-list">
                     <a href="{{ url }}" {{# target }}target="_blank"{{/target}}>{{ linkText }}</a>
                 </div>
             {{/linkList}}
 
+            {{# videoLinkBox }}
+                <a href="{{ url }}" title="weiterlesen: {{ title }}" class="link-box"></a>
+            {{/ videoLinkBox }}
 
         </div>
 

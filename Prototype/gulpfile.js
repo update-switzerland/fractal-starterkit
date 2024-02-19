@@ -32,6 +32,7 @@ gulp.task('less',function() {
 gulp.task('scripts', function() {
     return gulp.src([
         '../site/templates/public/js/ElementHelper.js',
+        '../site/templates/public/js/forms.js',
         '../site/templates/public/js/Globals.js',
         '../site/templates/views/**/*.js'
     ])
@@ -59,6 +60,7 @@ gulp.task('watch', function() {
         ], gulp.series('less'));
     gulp.watch([
         '../site/templates/views/vendor/**/*.js',
+        '../site/templates/public/js/forms.js',
         '../site/templates/public/js/global.js',
         '../site/templates/views/**/*.js'
          ], gulp.series('scripts', 'final-scripts'));
